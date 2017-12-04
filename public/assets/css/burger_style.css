@@ -1,0 +1,54 @@
+img {
+  padding: 5px;
+  margin: 5px;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  list-style:none;
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.unfolded {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.folded {
+  float: left;
+  padding: 5px;
+  margin: 5px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.forms {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  clear: both;
+}
+
+.create-form {
+  width: 50px;
+  margin: 0 auto;
+}
+
