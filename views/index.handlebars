@@ -2,38 +2,47 @@
 
 <h1>Eat-Da-Burger!</h1>
 
-<div class="unfolded">
-  <ul>
-    {{#each burgers}}
-      {{#unless devoured}}
-        {{this.id}}. {{burger_name}}
-        <button class="change-devoured" data-id="{{this.id}}" data-newdevoured="1">
-          Devour it!
-        </button>
-      {{/unless}}
-    {{/each}}
-  </ul>
-</div>
 
-<div class="folded">
-  <ul>
-    {{#each burgers}}
-      {{#if devoured}}
-      <li>
-        {{this.id}}. {{burger_name}}
-      </li>
-      {{/if}}
-    {{/each}}
-  </ul>
-</div>
+<div id="main">
+  <div class="unfolded">
+    <ul>
+      {{#each burgers}}
+        {{#unless devoured}}
+        <li class="leftLi">
+          <div class="item">
+            {{this.id}}. {{burger_name}}
+          </div>
+          <div class="devButton">
+            <button class="change-devoured" data-id="{{this.id}}" data-newdevoured="1">
+              Devour it!
+            </button>
+          </div>
+        </li>
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class="folded">
+    <ul>
+      {{#each burgers}}
+        {{#if devoured}}
+        <li class="rightLi">
+          {{this.id}}. {{burger_name}}
+        </li>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div> 
 
 <div class="forms">
-<form class="create-form">
-  <div class="form-group">
-    <input type="text" id="bg" name="name">
-  </div>
-  <button type="submit">Submit</button>
-</form>
+  <form class="create-form">
+    <input class="newOne" type="text" id="bg" name="name">
+    <p>
+    <button class="newButton" type="submit">Submit</button>
+    <p>Enter a burger you want to eat Click the "Submit" button.</p>
+  </form>
 </div>
 
 <script type="text/javascript">
