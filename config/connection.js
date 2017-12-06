@@ -18,7 +18,7 @@ var connection = mysql.createConnection({
 */
 
 var connection = mysql.createConnection({
-  host     : '9841ffc5@us-cdbr-iron-east-05.cleardb.net',
+  host     : 'us-cdbr-iron-east-05.cleardb.net',
   user     : 'b4beff7f3b59c3',
   password : 'cad145c790528d4',
   database : 'heroku_630caa16134d790'
