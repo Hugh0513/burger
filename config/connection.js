@@ -14,7 +14,8 @@ var connection = mysql.createConnection({
   host     : 'us-cdbr-iron-east-05.cleardb.net',
   user     : 'b4beff7f3b59c3',
   password : 'cad145c790528d4',
-  database : 'heroku_630caa16134d790'
+  database : 'heroku_630caa16134d790',
+  connectionLimit: 5
 });
 
 // JAWSDB_URL='mysql://hgo8s3x2qhn977nn:t5qpsfumfahkyij7@k3xio06abqa902qt.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/nzq7gylhl2vzej8k'
